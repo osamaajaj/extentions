@@ -99,10 +99,10 @@ let toggle = document.querySelector(".toggle");
 toggle.addEventListener("click", function(){
     let logoImg = document.getElementById("logoImg");
     let current = document.head.getElementsByTagName("link")[1].getAttribute("href");
-    if(current == "/css/style.css"){
+    if(current == "./css/style.css"){
         document.head.getElementsByTagName("link")[1].setAttribute("href", "./css/dark.css");
         document.getElementById("toggleImg").setAttribute("src", "./assets/images/icon-sun.svg");
-        logoImg.setAttribute("src", "/assets/images/logo-2.png");
+        logoImg.setAttribute("src", "./assets/images/logo-2.png");
     }
     else{
         document.head.getElementsByTagName("link")[1].setAttribute("href", "./css/style.css");
